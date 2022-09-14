@@ -7,6 +7,11 @@ contract Example {
         string  version;
         uint256 chainId;
         address verifyingContract;
+        
+        
+        
+        
+        
     }
 
     struct Person {
