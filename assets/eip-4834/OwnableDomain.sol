@@ -24,6 +24,9 @@ contract OwnableDomain is IDomain, IDomainAccessControl, IDomainEnumerable, ERC1
         _registerInterface(type(IDomain).interfaceId);
         _registerInterface(type(IDomainAccessControl).interfaceId);
         _registerInterface(type(IDomainEnumerable).interfaceId);
+        _registerInterface(type(IDomain).interfaceId);
+        _registerInterface(type(IDomainAccessControl).interfaceId);
+        _registerInterface(type(IDomainEnumerable).interfaceId);
     }
 
 
@@ -124,6 +127,10 @@ contract OwnableDomain is IDomain, IDomainAccessControl, IDomainEnumerable, ERC1
     }
 
     //// Subdomain Access Control
+    
+    
+    
+    
 
     function canMoveSubdomain(address updater, string memory name, IDomain parent, address newSubdomain) public virtual view returns (bool) {
         return this.owner() == updater;
