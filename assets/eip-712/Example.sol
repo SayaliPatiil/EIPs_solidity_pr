@@ -17,6 +17,13 @@ contract Example {
     struct Person {
         string name;
         address wallet;
+        string name;
+        address wallet;
+        string name;
+        address wallet;
+        string name;
+        address wallet;
+        
     }
 
     struct Mail {
